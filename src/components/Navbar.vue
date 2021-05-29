@@ -1,9 +1,16 @@
 <template>
-  <nav>
-    <h2>Gerson Umanzor</h2>
+  <nav class="flex bg-gray-900 text-white sticky top-0">
+    <router-link to="/"><h2>Gerson Umanzor</h2></router-link>
     <ul>
-      <li>Blog</li>
-      <li>Contact</li>
+      <li><router-link to="/blog" active-class="hidden">Blog</router-link></li>
+      <li>
+        <router-link to="/portfolio" active-class="hidden"
+          >Portfolio</router-link
+        >
+      </li>
+      <li>
+        <router-link to="/contact" active-class="hidden">Contact</router-link>
+      </li>
     </ul>
   </nav>
 </template>
@@ -14,4 +21,29 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+h2 {
+  @apply text-lg font-bold;
+}
+
+nav {
+  @apply flex justify-between content-center py-6 px-4;
+}
+
+ul {
+  @apply flex;
+}
+
+li + li {
+  @apply ml-4;
+}
+
+a {
+  @apply text-gray-200;
+  transition: all 0.5s;
+
+  &:hover {
+    @apply text-white;
+  }
+}
+</style>
