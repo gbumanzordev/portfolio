@@ -1,10 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <Navbar />
+  <router-view v-slot="{ Component }">
+    <transition>
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
 </template>
+
+<script>
+import Navbar from "@/components/Navbar";
+
+export default {
+  name: "App",
+  components: { Navbar },
+};
+</script>
 
 <style lang="scss">
 #app {
