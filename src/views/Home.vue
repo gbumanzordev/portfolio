@@ -3,21 +3,27 @@
     <div class="section p-4 bg-gray-200">
       <article>
         <h1>Hello there.</h1>
+        <img
+          src="https://avatars.githubusercontent.com/u/45671861?v=4"
+          alt="This is me"
+          class="w-80 mt-8"
+        />
       </article>
       <article>
         <p>I am a Software Engineer from El Salvador</p>
         <p>
-          🔭 I'm currently working as a Frontend Lead Developer at Applaudo
+          I'm currently working as a Frontend Lead Developer at Applaudo
           Studios.
         </p>
         <p>
-          🌱 While most of the work I've done is with Angular, I have also
+          While most of the work I've done is with Angular, I have also
           experience with Vue.js and Laravel for Back-End services.
         </p>
         <p>
-          📫 You can reach me through any of the links I left in the contact
-          page. Or if you have a project in mind, you can also leave a message
-          in the Contact section.
+          You can reach me through any of the links I left in the contact page.
+          Or if you have a project in mind, you can also leave a message in the
+          Contact section or to my
+          <a href="mailto:gbumanzordev@gmail.com" class='font-bold'>email</a>.
         </p>
       </article>
     </div>
@@ -72,10 +78,10 @@ article {
   @apply flex flex-col justify-center;
 }
 h1 {
-  @apply text-4xl font-bold;
+  @apply text-5xl font-bold;
 }
 p {
-  @apply mt-5 text-lg;
+  @apply mt-5 text-lg leading-10;
 }
 
 .section {
@@ -90,9 +96,8 @@ ul {
   li {
     @apply p-8;
   }
-}
-
-img {
-  @apply w-40;
+  li > img {
+    @apply w-40;
+  }
 }
 </style>

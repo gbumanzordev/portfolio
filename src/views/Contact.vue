@@ -8,10 +8,26 @@
           follow me on any of these platforms:
         </p>
         <ul>
-          <li><i class="fab fa-github"></i></li>
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-linkedin"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
+          <li>
+            <a href="https://github.com/gbumanzordev" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/gbumanzordev" target="_blank">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/bumanzor" target="_blank">
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/gbumanzordev" target="_blank">
+              <i class="fab fa-instagram"></i
+            ></a>
+          </li>
         </ul>
         <p>Of course, you can also ➡</p>
       </div>
@@ -98,6 +114,5 @@ ul {
   li {
     @apply text-4xl mr-8;
   }
-
 }
 </style>

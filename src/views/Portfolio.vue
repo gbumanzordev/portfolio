@@ -2,18 +2,11 @@
   <article class="wrapper">
     <Header>Projects I've worked on</Header>
     <transition-group tag="div" class="list">
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      <Project
+        v-for="project in projects"
+        :project="project"
+        :key="project.name"
+      />
     </transition-group>
   </article>
 </template>
@@ -21,9 +14,13 @@
 <script>
 import Header from "@/components/shared/Header";
 import Project from "@/components/Project";
+import { projects } from '@/utils/projects';
 export default {
   name: "Portfolio",
   components: { Project, Header },
+  data() {
+    return { projects };
+  },
 };
 </script>
 
@@ -32,11 +29,7 @@ export default {
   @apply pt-4 px-4 pb-8;
 }
 
-h1 {
-  @apply mb-8;
-}
-
 .list {
-  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8;
 }
 </style>

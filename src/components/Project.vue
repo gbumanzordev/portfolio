@@ -1,25 +1,34 @@
 <template>
   <div class="project">
-    <img src="https://picsum.photos/200/200" alt="" />
-    <h3>Decisionlink - Maui</h3>
+    <img :src="project.photo" alt="" />
+    <h3>{{ project.name }}</h3>
     <p>
-      SaaS for Value Cloud Management. Value Case, Hypotheses and Realizations
-      handling as well as Models, Factors, Benefits and Case Studies.
+      {{ project.description }}
     </p>
+    <div class="tags">
+      <div
+        v-for="tech of project.stack"
+        :key="tech"
+        class="rounded-full py-1 px-4 bg-green-600 text-white text-xs"
+      >
+        {{ tech }}
+      </div>
+    </div>
     <div class="actions">
       <a
-        href="https://github.com/gbumanzordev"
+        v-if="project.githubRepo"
+        :href="project.githubRepo"
         target="_blank"
         class="bg-white rounded-full text-gray-900"
       >
         <i class="fab fa-github" />
       </a>
       <a
-        href="https://twitter.com/gbumanzordev"
+        :href="project.url"
         target="_blank"
         class="bg-white rounded-full text-gray-900"
       >
-        <i class="fab fa-twitter" />
+        <i class="fas fa-link"></i>
       </a>
     </div>
   </div>
@@ -28,15 +37,32 @@
 <script>
 export default {
   name: "Project",
+  props: {
+    project: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
+.tags {
+  div {
+    font-family: "Fira Sans", sans-serif;
+  }
+  @apply flex my-4 mb-8 px-4;
+  div:not(div:last-child) {
+    @apply mr-4;
+  }
+}
 .project {
   @apply flex flex-col shadow-lg rounded-lg hover:shadow-xl;
 }
 
 img {
+  @apply h-52;
+  object-fit: cover;
 }
 
 h3 {

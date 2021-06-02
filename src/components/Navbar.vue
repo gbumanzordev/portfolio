@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  @apply text-lg font-bold;
+  @apply text-xl font-bold;
 }
 
 nav {
@@ -39,7 +39,8 @@ li + li {
 }
 
 a {
-  @apply text-gray-200;
+  @apply text-gray-200 font-normal text-lg;
+  font-family: "Fira Sans", sans-serif;
   transition: all 0.5s;
 
   &:hover {
