@@ -79,6 +79,7 @@
 .about {
   @apply pt-4 px-4 bg-gray-700 text-gray-50;
   height: calc(100vh - 76px);
+  // TODO: Add media query for small width's height.
 }
 
 h1 {
@@ -99,6 +100,7 @@ h2 {
 
 article {
   @apply grid grid-cols-1 md:grid-cols-2 gap-12 h-full;
+
   div {
     @apply flex flex-col justify-center items-start;
   }
