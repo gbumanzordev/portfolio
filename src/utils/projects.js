@@ -46,6 +46,7 @@ export const projects = [
     photo: require("@/assets/portfolio.webp"),
     description:
       "Portfolio to showcase my job and recent projects, my stack and how to reach out.",
+    githubRepo: "https://github.com/gbumanzordev/portfolio",
     url: "https://gbumanzordev.netlify.app",
     stack: [
       { name: "JavaScript", color: colors.javascript },
