@@ -9,9 +9,10 @@
       <div
         v-for="tech of project.stack"
         :key="tech"
-        class="rounded-full py-1 px-4 bg-green-600 text-white text-xs"
+        class="rounded-full py-1 px-4 text-white text-xs"
+        :class="tech.color"
       >
-        {{ tech }}
+        {{ tech.name }}
       </div>
     </div>
     <div class="actions">
@@ -66,7 +67,7 @@ img {
 }
 
 h3 {
-  @apply py-4 text-xl font-bold uppercase overflow-ellipsis whitespace-nowrap overflow-x-hidden px-4;
+  @apply py-4 text-xl font-bold overflow-ellipsis whitespace-nowrap overflow-x-hidden px-4;
 }
 
 p {
