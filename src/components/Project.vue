@@ -23,22 +23,16 @@
         {{ tech.name }}
       </div>
     </div>
-    <div class="actions">
+    <div class="actions" v-if="project.githubRepo || project.url">
       <a
         v-if="project.githubRepo"
         :href="project.githubRepo"
         target="_blank"
-        class="bg-white rounded-full text-gray-900"
+        class="bg-gray-300 text-gray-900 hover:bg-gray-200"
       >
-        <i class="fab fa-github" />
+        <i class="fab fa-github" /> Source Code
       </a>
-      <a
-        :href="project.url"
-        target="_blank"
-        class="bg-white rounded-full text-gray-900"
-      >
-        <i class="fas fa-link"></i>
-      </a>
+      <a :href="project.url" target="_blank" class="hover:bg-gray-100 border-gray-100 border-2">Demo </a>
     </div>
   </div>
 </template>
@@ -94,6 +88,14 @@ h3 {
   @apply py-4 text-xl font-bold overflow-ellipsis whitespace-nowrap overflow-x-hidden px-4;
 }
 
+.pictures {
+  @apply grid grid-cols-4 px-4 gap-3 mb-4;
+
+  img {
+    @apply w-16 h-16 rounded-md border-2 hover:border-gray-900 cursor-pointer;
+  }
+}
+
 p {
   @apply text-sm leading-6 px-4 mb-4;
   display: -webkit-box;
@@ -103,22 +105,19 @@ p {
 }
 
 .actions {
-  @apply px-4 mb-4 flex justify-center;
+  @apply px-4 mb-4 flex;
 
   a {
-    @apply text-2xl;
+    @apply px-4 py-2 flex items-center text-xs font-bold rounded-md;
+    font-family: "Fira Sans", sans-serif;
+
+    i {
+      @apply text-sm mr-2;
+    }
   }
 
   a + a {
     @apply ml-4;
-  }
-}
-
-.pictures {
-  @apply grid grid-cols-4 px-4 gap-3 mb-4;
-
-  img {
-    @apply w-16 h-16 rounded-md border-2 hover:border-gray-900 cursor-pointer;
   }
 }
 </style>

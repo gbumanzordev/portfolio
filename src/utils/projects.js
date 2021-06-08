@@ -13,7 +13,6 @@ export const projects = [
     photo: require("@/assets/dl.png"),
     description:
       "Value Cloud SaaS to manage Cases, Hypotheses, Realizations, Case Studies and Models.",
-    url: "https://demo.maui-dev.value-cloud.com",
     stack: [
       { name: "Angular", color: colors.angular },
       { name: "NgRx", color: colors.ngrx },
@@ -41,7 +40,6 @@ export const projects = [
     photo: require("@/assets/gk.png"),
     description:
       "Single-Sign-On Application to handle authentication and sync for Applaudo Studios Employees.",
-    url: "https://gatekeeper.applaudostudios.com",
     stack: [
       { name: "Angular", color: colors.angular },
       { name: "NgRx", color: colors.ngrx },
