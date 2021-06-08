@@ -12,6 +12,7 @@
 <script>
 import Header from "@/components/shared/Header";
 import BlogPost from "@/components/BlogPost";
+
 export default {
   name: "Blog",
   components: { BlogPost, Header },
@@ -20,6 +21,6 @@ export default {
 
 <style scoped>
 .blog {
-  @apply pt-4 px-4;
+  @apply pt-4 px-8;
 }
 </style>

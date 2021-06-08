@@ -1,7 +1,15 @@
 <template>
   <div class="project">
-    <img :src="project.photo" alt="" />
+    <img :src="photo" alt="" />
     <h3>{{ project.name }}</h3>
+    <div class="pictures">
+      <img
+        v-for="photo of project.images"
+        :key="photo"
+        @click="swapPhoto(photo)"
+        :src="photo"
+      />
+    </div>
     <p>
       {{ project.description }}
     </p>
@@ -44,6 +52,21 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      photo: "",
+    };
+  },
+  mounted() {
+    if (this.project) {
+      this.photo = this.project.photo;
+    }
+  },
+  methods: {
+    swapPhoto(photo) {
+      this.photo = photo;
+    },
+  },
 };
 </script>
 
@@ -57,6 +80,7 @@ export default {
     @apply mr-4;
   }
 }
+
 .project {
   @apply flex flex-col shadow-lg rounded-lg hover:shadow-xl;
 }
@@ -71,7 +95,7 @@ h3 {
 }
 
 p {
-  @apply text-lg px-4 mb-4;
+  @apply text-sm leading-6 px-4 mb-4;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -87,6 +111,14 @@ p {
 
   a + a {
     @apply ml-4;
+  }
+}
+
+.pictures {
+  @apply grid grid-cols-4 px-4 gap-3 mb-4;
+
+  img {
+    @apply w-16 h-16 rounded-md border-2 hover:border-gray-900 cursor-pointer;
   }
 }
 </style>

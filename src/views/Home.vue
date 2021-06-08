@@ -23,7 +23,7 @@
           You can reach me through any of the links I left in the contact page.
           Or if you have a project in mind, you can also leave a message in the
           Contact section or to my
-          <a href="mailto:gbumanzordev@gmail.com" class='font-bold'>email</a>.
+          <a href="mailto:gbumanzordev@gmail.com" class="font-bold">email</a>.
         </p>
       </article>
     </div>
@@ -75,10 +75,11 @@ export default {
 
 <style lang="scss" scoped>
 article {
-  @apply flex flex-col justify-center;
+  @apply flex flex-col px-4 justify-center;
 }
 h1 {
-  @apply text-5xl font-bold;
+  @apply text-5xl font-bold mt-4;
+  line-height: 4rem;
 }
 p {
   @apply mt-5 text-lg leading-10;
@@ -87,6 +88,10 @@ p {
 .section {
   @apply grid grid-cols-1 md:grid-cols-2 p-4;
   height: calc(100vh - 76px);
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 }
 
 ul {

@@ -19,6 +19,12 @@ export const projects = [
       { name: "NgRx", color: colors.ngrx },
       { name: "Laravel", color: colors.laravel },
     ],
+    images: [
+      require("@/assets/dl-1.png"),
+      require("@/assets/dl-2.png"),
+      require("@/assets/dl-3.png"),
+      require("@/assets/dl-4.png"),
+    ],
   },
   {
     name: "Vue-Gi-Oh!",
@@ -28,6 +34,7 @@ export const projects = [
     githubRepo: "https://github.com/gbumanzordev/vue-gi-oh",
     url: "https://adoring-dijkstra-dafe6b.netlify.app/",
     stack: [{ name: "Vue", color: colors.vue }],
+    images: [require("@/assets/vgo-1.png"), require("@/assets/vgo-2.png")],
   },
   {
     name: "Gatekeeper",
@@ -40,17 +47,27 @@ export const projects = [
       { name: "NgRx", color: colors.ngrx },
       { name: "NestJS", color: colors.nestjs },
     ],
+    images: [
+      require("@/assets/gk-1.png"),
+      require("@/assets/gk-2.png"),
+      require("@/assets/gk-3.png"),
+    ],
   },
   {
     name: "Portfolio",
     photo: require("@/assets/portfolio.webp"),
     description:
-      "Portfolio to showcase my job and recent projects, my stack and how to reach out.",
+      "Portfolio to practice my Vue skills, showcase my job and recent projects, my stack and how to reach out.",
     githubRepo: "https://github.com/gbumanzordev/portfolio",
     url: "https://gbumanzordev.netlify.app",
     stack: [
       { name: "JavaScript", color: colors.javascript },
       { name: "Vue", color: colors.vue },
+    ],
+    images: [
+      require("@/assets/p-1.png"),
+      require("@/assets/p-2.png"),
+      require("@/assets/p-3.png"),
     ],
   },
 ];

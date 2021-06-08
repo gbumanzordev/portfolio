@@ -66,7 +66,7 @@
           ></textarea>
         </div>
         <button
-          class="bg-gray-200 text-gray-900 py-2 px-4 rounded-md hover:bg-gray-300 mt-4"
+          class="bg-gray-200 text-gray-900 py-2 px-4 rounded-md hover:bg-gray-300 mt-4 mb-8"
         >
           Send Message
         </button>
@@ -79,7 +79,10 @@
 .about {
   @apply pt-4 px-4 bg-gray-700 text-gray-50;
   height: calc(100vh - 76px);
-  // TODO: Add media query for small width's height.
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 }
 
 h1 {
@@ -99,7 +102,7 @@ h2 {
 }
 
 article {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-12 h-full;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 h-full px-4;
 
   div {
     @apply flex flex-col justify-center items-start;

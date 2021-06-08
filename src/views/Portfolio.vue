@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .wrapper {
-  @apply pt-4 px-4 pb-8;
+  @apply pt-4 px-8 pb-8;
 }
 
 .list {
