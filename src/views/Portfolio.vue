@@ -14,7 +14,8 @@
 <script>
 import Header from "@/components/shared/Header";
 import Project from "@/components/Project";
-import { projects } from '@/utils/projects';
+import { projects } from "@/utils/projects";
+
 export default {
   name: "Portfolio",
   components: { Project, Header },

@@ -32,7 +32,12 @@
       >
         <i class="fab fa-github" /> Source Code
       </a>
-      <a :href="project.url" target="_blank" class="hover:bg-gray-100 border-gray-100 border-2">Demo </a>
+      <a
+        :href="project.url"
+        target="_blank"
+        class="hover:bg-gray-100 border-gray-100 border-2"
+        >Demo
+      </a>
     </div>
   </div>
 </template>

@@ -6,25 +6,27 @@
         <img
           src="https://avatars.githubusercontent.com/u/45671861?v=4"
           alt="This is me"
-          class="w-80 mt-8"
+          class="w-80 mt-8 rounded-md shadow-lg"
         />
       </article>
       <article>
         <p>I am a Software Engineer from El Salvador</p>
         <p>
-          I'm currently working as a Frontend Lead Developer at Applaudo
-          Studios.
+          I have experience and Leading Frontend Development Teams using
+          frameworks and libraries such as Angular and Vue.JS
         </p>
         <p>
-          While most of the work I've done is with Angular, I have also
-          experience with Vue.js and Laravel for Back-End services.
+          I have also worked in some projects with Back-End Technologies such as
+          Laravel, NodeJS/Express and NestJS.
         </p>
         <p>
-          You can reach me through any of the links I left in the contact page.
-          Or if you have a project in mind, you can also leave a message in the
-          Contact section or to my
+          If you have a project in mind, you can DM on my social media, leave a
+          message in the Contact section or to my
           <a href="mailto:gbumanzordev@gmail.com" class="font-bold">email</a>.
         </p>
+        <div class="social">
+          <Social />
+        </div>
       </article>
     </div>
     <div class="section bg-gray-600 text-white">
@@ -61,6 +63,12 @@
               alt="Laravel"
             />
           </li>
+          <!--li>
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg"
+              alt="NestJS"
+            />
+          </li-->
         </ul>
       </article>
     </div>
@@ -68,8 +76,11 @@
 </template>
 
 <script>
+import Social from "@/components/shared/Social";
+
 export default {
   name: "Home",
+  components: { Social },
 };
 </script>
 
@@ -104,5 +115,9 @@ ul {
   li > img {
     @apply w-40;
   }
+}
+
+.social {
+  @apply flex flex-col justify-center items-start;
 }
 </style>
