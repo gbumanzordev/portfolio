@@ -31,7 +31,7 @@ export const projects = [
     description:
       "Small pet project to practice my Vue skills, retrieves, paginates and shows details for the Yu-Gi-Oh! Cards.",
     githubRepo: "https://github.com/gbumanzordev/vue-gi-oh",
-    url: "https://adoring-dijkstra-dafe6b.netlify.app/",
+    url: "https://vue-gi-oh.netlify.app/",
     stack: [{ name: "Vue", color: colors.vue }],
     images: [require("@/assets/vgo-1.png"), require("@/assets/vgo-2.png")],
   },
