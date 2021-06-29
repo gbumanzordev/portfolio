@@ -53,6 +53,12 @@
           </li>
           <li>
             <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg"
+              alt="React"
+            />
+          </li>
+          <li>
+            <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
               alt="Vue.js"
             />

@@ -1,12 +1,8 @@
 <template>
   <div class="wrapper">
-    <h1>Angular Best Practices</h1>
+    <h1>{{ post.title }}</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate
-      eius eum explicabo, illo magni necessitatibus sed tempora tenetur! Aliquam
-      assumenda at aut commodi dolorum ducimus enim, est explicabo fuga ipsa
-      iure modi necessitatibus nisi nulla repudiandae sint tenetur totam. Autem
-      dicta et fugiat iusto magnam nesciunt possimus praesentium vitae!
+      {{ post.excerpt }}
     </p>
     <button>Read full article</button>
   </div>
@@ -15,6 +11,12 @@
 <script>
 export default {
   name: "BlogPost",
+  props: {
+    post: {
+      required: true,
+      type: Object,
+    },
+  },
 };
 </script>
 

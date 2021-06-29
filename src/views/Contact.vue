@@ -28,24 +28,23 @@
           />
         </div>
         <div class="form-group">
-          <label for="">Subject:</label>
+          <label>Subject:</label>
           <input
             type="text"
             class="bg-gray-200 focus:bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none"
           />
         </div>
         <div class="form-group">
-          <label for="">Message:</label>
+          <label>Message:</label>
           <textarea
-            name=""
             class="bg-gray-200 focus:bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none"
-            id=""
             cols="30"
             rows="10"
           ></textarea>
         </div>
         <button
           class="bg-gray-200 text-gray-900 py-2 px-4 rounded-md hover:bg-gray-300 mt-4 mb-8"
+          disabled="disabled"
         >
           Send Message
         </button>
@@ -99,5 +98,9 @@ article {
 
 .submit {
   @apply flex;
+}
+
+button[disabled] {
+  cursor: not-allowed;
 }
 </style>
