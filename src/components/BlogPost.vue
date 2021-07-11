@@ -4,7 +4,7 @@
     <p>
       {{ post.excerpt }}
     </p>
-    <button>Read full article</button>
+    <button @click="$router.push(`/blog/${post.id}`)">Read full article</button>
   </div>
 </template>
 
