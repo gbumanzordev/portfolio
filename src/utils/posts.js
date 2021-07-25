@@ -68,4 +68,12 @@ export const blogPosts = [
       iure modi necessitatibus nisi nulla repudiandae sint tenetur totam. Autem
       dicta et fugiat iusto magnam nesciunt possimus praesentium vitae!`,
   },
+  {
+    id: 5,
+    title: "Utility Types en TypeScript",
+    excerpt: `En esta publicacion me gustaria explicarles algunos de los tipos utilitarios 
+    o utility types que existen en TypeScript. Conocerlos es muy importante ya que nos ahorran 
+    tener que escribirlos manualmente y podemos combinar o sacar provecho de tipos ya creados 
+    para generar nuevos. Empecemos.`,
+  },
 ];
