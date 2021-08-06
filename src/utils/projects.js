@@ -52,8 +52,19 @@ export const projects = [
     ],
   },
   {
-    name: "Portfolio",
+    name: "Vuekemon",
     photo: require("@/assets/portfolio.webp"),
+    description: "A small game built with vue to guess the pokemon.",
+    githubRepo: "https://github.com/gbumanzordev/vuekemon",
+    url: "https://vuekemon.netlify.app",
+    stack: [
+      { name: "JavaScript", color: colors.javascript },
+      { name: "Vue", color: colors.vue },
+    ],
+  },
+  {
+    name: "Portfolio",
+    photo: require("@/assets/pokemon.jpeg"),
     description:
       "Portfolio to practice my Vue skills, showcase my job and recent projects, my stack and how to reach out.",
     githubRepo: "https://github.com/gbumanzordev/portfolio",
