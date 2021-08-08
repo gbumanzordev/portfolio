@@ -61,6 +61,7 @@ export const projects = [
       { name: "JavaScript", color: colors.javascript },
       { name: "Vue", color: colors.vue },
     ],
+    images: [require("@/assets/vk-1.png")],
   },
   {
     name: "Portfolio",
