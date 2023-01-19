@@ -4,7 +4,7 @@
   >
     <router-link to="/"><h2>Gerson Umanzor</h2></router-link>
     <ul>
-      <li><router-link to="/blog" active-class="hidden">Blog</router-link></li>
+      <li><a href="https://blog.gbumanzor.dev">Blog</a></li>
       <li>
         <router-link to="/portfolio" class="ml-4" active-class="hidden"
           >Portfolio</router-link
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
 };
 </script>
 
